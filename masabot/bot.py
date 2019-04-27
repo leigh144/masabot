@@ -1138,7 +1138,7 @@ class MasaBot(object):
 		except ValueError as e:
 			await self.show_syntax_error(context, str(e))
 			return
-		cmd = tokens[0]
+		cmd = tokens[0].lower()
 		args = tokens[1:]
 
 		if cmd == 'help':
