@@ -521,6 +521,7 @@ class MasaBot(object):
 		else:
 			if help_module.startswith(pre):
 				help_module = help_module[len(pre):]
+			help_module = help_module.lower()
 			if help_module == "help":
 				msg = "Oh, that's the command that you use to get me to give you info about other modules! You can"
 				msg += " run it by itself, `" + pre + "help`, to just show the list of all commands and modules, or you"
